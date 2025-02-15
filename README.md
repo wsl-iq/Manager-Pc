@@ -1,4 +1,4 @@
-<img src="icon\icon.png" alt="Program Icon" width="100" height="100">
+<img src="icon.png" alt="Program Icon" width="100" height="100">
 
 
 ## ![Connect](https://img.shields.io/badge/Manager_PC-For_Windows-0056D2?style=for-the-badge&logo=windows&logoColor=white)
@@ -76,7 +76,7 @@ $ run.exe
 `or`
 
 ```
-ManagerPc.bat
+$ ManagerPc.bat
 ```
 
 ---
@@ -99,6 +99,18 @@ $ python main.py
 
 ---
 
+### 🛡⚔ **Update and Security**
+- 🔹 **chacking update windows system and Application**
+- 🔹 **clean and clear temp file**
+- 🔹 **Fix Bug problem Windows system**
+- 🔹 **Encrypt and Decrypt images audio and binary**
+- 🔹 **control for folder by Show and hide**
+- 🔹 **open BIOS**
+- 🔹 **generate password GUI**
+- 🔹 **task manager security windows system**
+
+---
+
 ### 🛜 **Network and Connectivity**
 - 🔹 **Monitor Network Traffic**: Track and log network traffic in CSV, JSON, or DB files.
 - 🔹 **Display Network Information**: View IP address, connection speed, and other network details.
@@ -110,6 +122,8 @@ $ python main.py
 - 🔹 **Install WSL (Windows Subsystem for Linux)**: Install and manage different Linux distributions on Windows.
 - 🔹 **Install Required Libraries**: Easily install essential libraries for better performance.
 - 📥 **Microsoft C++**: Automatically installs necessary Microsoft C++ libraries.
+- 🔹 **Download SDK .NET C#**
+- 🔹 **Download MocroSoft Visual Studio**
 
 ---
 
@@ -122,3 +136,16 @@ $ python main.py
 - **Administrator Privileges Required**: The program requires admin rights to function properly and avoid tool malfunctions.
 
 ---
+
+### **For Uninstall** `Manager Pc` 
+
+```
+$ python uninstall.py
+```
+
+---
+
+## ![Connect](https://img.shields.io/badge/Connect_with_Developer-0056D2?style=for-the-badge&logo=links&logoColor=white)
+
+- [![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/wsl.iq)
+- [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white)](https://t.me/wsl-iq)
