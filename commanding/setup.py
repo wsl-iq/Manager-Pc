@@ -2,6 +2,7 @@ import subprocess
 import time
 import os
 
+R = "\033[91;1m"  # Red
 G = "\033[92;1m"  # Green
 B = "\033[94;1m"  # Blue
 Y = "\033[93;1m"  # Yellow
@@ -59,10 +60,14 @@ os.system('cls' if os.name == 'nt' else 'clear')
 for pip in package:
     subprocess.run(f'pip install {pip}', shell=True, check=True)
 
-def slowprint(text):
+def slowprint1(text):
+    for char in text:
+        print(char, end='', flush=True)
+slowprint1(f'\n{R}┌─[{M}Mohammed Al-Baqer{Y}@{B}WSL.IQ{R}]─[{G}~{R}]\n└──╼ {R}>{Y}>{G}>{B} ')
+
+def slowprint2(text):
     for char in text:
         print(char, end='', flush=True)
         time.sleep(0.02)
-slowprint(f'{M}--------------- {Y}python upgrade {M}---------------{W}\n')
-print(f'{INFO} {Y}=> {B}$ {G}python.exe -m pip install --upgrade pip{W}')
+slowprint2(f'python.exe -m pip install --upgrade pip{W}\n\n')
 os.system('python.exe -m pip install --upgrade pip')
