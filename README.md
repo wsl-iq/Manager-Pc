@@ -108,6 +108,8 @@ $ python main.py
 - 🔹 **open BIOS**
 - 🔹 **generate password GUI**
 - 🔹 **task manager security windows system**
+- 🔹 **System Process Monitoring**
+
 
 ---
 
@@ -115,6 +117,9 @@ $ python main.py
 - 🔹 **Monitor Network Traffic**: Track and log network traffic in CSV, JSON, or DB files.
 - 🔹 **Display Network Information**: View IP address, connection speed, and other network details.
 - 🔹 **Show Saved Wi-Fi Passwords**: Reveal the saved passwords for connected Wi-Fi networks.
+- 🔹 **Open Port Forwarding**
+- 🔹 **speed test network and show information** : open website browser speed test
+- 🔹 **Search on proxy working**
 
 ---
 
