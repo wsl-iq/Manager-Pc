@@ -51,7 +51,7 @@ package = [
     "pyperclip",
     "win10toast",
     "tqdm",
-    "instaloader"
+    "instaloader",
     "keyboard"
 ]
 
