@@ -129,10 +129,17 @@ $ python main.py
 ---
 
 ### ⚙️🛠️ **Tool Installation**
-- 🔹 **Install WSL (Windows Subsystem for Linux)**: Install and manage different Linux distributions on Windows.
+- 🔹 **Install WSL (Windows Subsystem for Linux)**: Install and manage different Linux distributions on Windows
+- [![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)](#)
+- [![Arch Linux](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff)](#)
+- [![Asahi Linux](https://img.shields.io/badge/Asahi%20Linux-A61200?logo=asahilinux&logoColor=fff)](#)
+- [![Artix Linux](https://img.shields.io/badge/Artix%20Linux-10A0CC?logo=artixlinux&logoColor=fff)](#)
+- [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](#)
+- [![Fedora](https://img.shields.io/badge/Fedora-51A2DA?logo=fedora&logoColor=fff)](#)
+- [![Kali Linux](https://img.shields.io/badge/Kali%20Linux-557C94?logo=kalilinux&logoColor=fff)](#)
 - 🔹 **Install Required Libraries**: Easily install essential libraries for better performance.
 - 📥 **Microsoft C++**: Automatically installs necessary Microsoft C++ libraries ![C++](https://img.shields.io/badge/-C++-3776AB?style=flat-square&logo=C%2B%2B&logoColor=white)
-- 🔹 **Download SDK .NET C#** [![C#](https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?logo=cshrp&logoColor=white)](#) [[![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=fff)](#)
+- 🔹 **Download SDK .NET C#** [![C#](https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?logo=cshrp&logoColor=white)](#) . [![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=fff)](#)
 - 🔹 **Download MocroSoft Visual Studio** [![Visual Studio](https://custom-icon-badges.demolab.com/badge/Visual%20Studio-5C2D91.svg?&logo=visual-studio&logoColor=white)](#)
 
 ---
