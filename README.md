@@ -140,7 +140,9 @@ $ python main.py
 - 🔹 **Install Required Libraries**: Easily install essential libraries for better performance.
 - 📥 **Microsoft C++**: Automatically installs necessary Microsoft C++ libraries ![C++](https://img.shields.io/badge/-C++-3776AB?style=flat-square&logo=C%2B%2B&logoColor=white)
 - 🔹 **Download SDK .NET C#** [![C#](https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?logo=cshrp&logoColor=white)](#) . [![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=fff)](#)
-- 🔹 **Download MocroSoft Visual Studio** [![Visual Studio](https://custom-icon-badges.demolab.com/badge/Visual%20Studio-5C2D91.svg?&logo=visual-studio&logoColor=white)](#)
+- 🔹 **Download MocroSoft Visual Studio 2022 (IDE)** [![Visual Studio](https://custom-icon-badges.demolab.com/badge/Visual%20Studio-5C2D91.svg?&logo=visual-studio&logoColor=white)](#)
+- 🔹 **Download Microsoft Visual Studio Code (VS Code)** [![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=vsc&logoColor=white)](#)
+- 🔹 **Download Edit code Python IDLE**[![Python IDLE](https://img.shields.io/badge/Python%20IDLE-3776AB?logo=python&logoColor=fff)](#)
 
 ---
 
