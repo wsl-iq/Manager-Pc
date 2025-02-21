@@ -57,6 +57,7 @@ For inquiries or support, please contact the developer via GitHub or through the
 ### ![Connect](https://img.shields.io/badge/Connect_with_Developer-0056D2?style=for-the-badge&logo=links&logoColor=white)
 - [![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/wsl.iq)
 - [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white)](https://t.me/wsl-iq)
+- [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/wsl-iq)
 
 ---
 
@@ -69,7 +70,7 @@ For inquiries or support, please contact the developer via GitHub or through the
 ```
 $ setup.bat
 ```
-`The file` **setub.bat** `downloads Python packages`
+`The file` **setub.bat** `downloads Python packages` [![PyPI](https://img.shields.io/badge/PyPI-3775A9?logo=pypi&logoColor=fff)](#)
 
 ---
 
@@ -135,6 +136,7 @@ $ python main.py
 - [![Asahi Linux](https://img.shields.io/badge/Asahi%20Linux-A61200?logo=asahilinux&logoColor=fff)](#)
 - [![Artix Linux](https://img.shields.io/badge/Artix%20Linux-10A0CC?logo=artixlinux&logoColor=fff)](#)
 - [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](#)
+- [![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=white)](#)
 - [![Fedora](https://img.shields.io/badge/Fedora-51A2DA?logo=fedora&logoColor=fff)](#)
 - [![Kali Linux](https://img.shields.io/badge/Kali%20Linux-557C94?logo=kalilinux&logoColor=fff)](#)
 - 🔹 **Install Required Libraries**: Easily install essential libraries for better performance.
