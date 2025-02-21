@@ -70,8 +70,9 @@ For inquiries or support, please contact the developer via GitHub or through the
 ```
 $ setup.bat
 ```
-- [![PyPI](https://img.shields.io/badge/PyPI-3775A9?logo=pypi&logoColor=fff)](#)
-`The file` **setub.bat** `downloads Python packages`
+- [![PyPI](https://img.shields.io/badge/PyPI-3775A9?logo=pypi&logoColor=fff)]
+  
+- `The file` **setub.bat** `downloads Python packages`
 
 ---
 
