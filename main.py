@@ -138,7 +138,7 @@ def clear_screen_terminal():
 def Back_Menu():
     try:
         while True:
-            Back = input(f'{Question} Do You Go To Back on the menu Home {Y}(y/n){Y}: {G}')
+            Back = input(f'{R}┌─[{M}Mohammed Al-Baqer{Y}@{B}WSL.IQ{R}]─[{G}Do You Go To Back on the menu Home? (y/n){R}]\n└──╼ {R}>{Y}>{G}>{B} ')
 
             if Back == 'y' or Back == 'Y':
                 os.system('cls' if os.name == 'nt' else 'clear')
@@ -1678,8 +1678,9 @@ def main():
                     print(f'{G}[1] {B}installing software or setting up components on a Windows system{W}')
                     print(f'{G}[2] {B}Installing {Y}C++ {B}System Components{W}')
                     print(f'{G}[3] {B}installing {M}C# {G}.NET SDK {B}for Windows{W}')
-                    print(f'{G}[4] {B}installing Microsoft Visual Studio Community 2022 for Windows{W}')
-                    print(f'{G}[5] {Y}Exit{W}')
+                    print(f'{G}[4] {B}installing Microsoft Visual Studio 2022 for Windows{W}')
+                    print(f'{G}[5] {Y}downloading PyCharm Python IDLE for Windows{W}')
+                    print(f'{G}[6] {Y}Exit{W}')
                     chpoce_cpp = input(f'{Enter} Enter choice options: {Y}')
 
                     if chpoce_cpp == '1':
@@ -1733,11 +1734,48 @@ _________
   \___| (_)   \_\ /_/   ___ 
                        |___|
     {G}By {W}: {B}Mohammed Al-Baqer {W}''')
-                        os.system(r'https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false')
+                        print(f'{G}[1] {B}Microsoft Visual Studio 2022 (Community){W}')
+                        print(f'{G}[2] {B}Microsoft Visual Studio 2022 (Professional){W}')
+                        print(f'{G}[3] {B}Microsoft Visual Studio 2022 (Enterprise){W}')
+                        print(f'{G}[4] {B}Exit{W}')
+
+                        VS = input('Enter version Microsoft Visual Studio IDE: ')
+
+                        if VS == '1':
+                            webbrowser.open('https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false')
+                            Back_Menu()
+                            break
+
+                        elif VS == '2':
+                            webbrowser.open('https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false')
+                            Back_Menu()
+                            break
+
+                        elif VS == '3':
+                            webbrowser.open('https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false')
+                            Back_Menu()
+                            break
+
+                        elif VS == '4':
+                            Back_Menu()
+                            break
+
+                        else:
+                            sys.exit(0)
+
+                    elif chpoce_cpp == '5':
+                        clear_screen_terminal()
+                        print(f'''{B}         
+ _____     _____ _                 
+|  _  |_ _|     | |_ ___ ___ _____ 
+|   __| | |   --|   | .'|  _|     |
+|__|  |_  |_____|_|_|__,|_| |_|_|_|
+      |___|                        {W}\n''')
+                        webbrowser.open('https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows')
                         Back_Menu()
                         break
 
-                    elif chpoce_cpp == '5':
+                    elif chpoce_cpp == '6':
                         Back_Menu()
                         break
 
