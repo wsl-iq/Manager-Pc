@@ -143,8 +143,8 @@ $ python main.py
 ---
 
 ### ⚠️ **Important Notice**
-<img src="icon\Adminisrtator.png" alt="Program Icon" width="50" height="50">
-- **Administrator Privileges Required**: The program requires admin rights to function properly and avoid tool malfunctions.
+
+- **Administrator Privileges Required** <img src="icon\Adminisrtator.png" alt="Program Icon" width="25" height="25"> : The program requires admin rights to function properly and avoid tool malfunctions.
 
 ---
 
