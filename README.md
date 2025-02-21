@@ -133,7 +133,7 @@ $ python main.py
 - 🔹 **Install Required Libraries**: Easily install essential libraries for better performance.
 - 📥 **Microsoft C++**: Automatically installs necessary Microsoft C++ libraries ![C++](https://img.shields.io/badge/-C++-3776AB?style=flat-square&logo=C%2B%2B&logoColor=white)
 - 🔹 **Download SDK .NET C#** [![C#](https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?logo=cshrp&logoColor=white)](#)
-- 🔹 **Download MocroSoft Visual Studio**
+- 🔹 **Download MocroSoft Visual Studio** [![Visual Studio](https://custom-icon-badges.demolab.com/badge/Visual%20Studio-5C2D91.svg?&logo=visual-studio&logoColor=white)](#)
 
 ---
 
