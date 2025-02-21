@@ -53,7 +53,13 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 ---
 
 ## Contact
-For inquiries or support, please contact the developer via GitHub or through the provided email.
+For inquiries or support, please contact the developer via GitHub or through the provided Cosal Madiy.
+### ![Connect](https://img.shields.io/badge/Connect_with_Developer-0056D2?style=for-the-badge&logo=links&logoColor=white)
+
+- [![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/wsl.iq)
+- [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white)](https://t.me/wsl-iq)
+
+---
 
 ## Installation 
 
@@ -147,10 +153,3 @@ $ python main.py
 ```
 $ python uninstall.py
 ```
-
----
-
-## ![Connect](https://img.shields.io/badge/Connect_with_Developer-0056D2?style=for-the-badge&logo=links&logoColor=white)
-
-- [![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/wsl.iq)
-- [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white)](https://t.me/wsl-iq)
