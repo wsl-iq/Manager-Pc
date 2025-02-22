@@ -24,7 +24,7 @@
 ## Development
 
 This program was developed using:
-- **Python** ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white), a versatile programming language known for its reliability and extensive libraries.
+- **Python** ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) . a versatile programming language known for its reliability and extensive libraries.
 
 ---
 
