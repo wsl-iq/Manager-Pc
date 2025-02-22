@@ -71,7 +71,7 @@ For inquiries or support, please contact the developer via GitHub or through the
 $ setup.bat
 ```
 
--<img src="icon\PyPI.png" alt="pip" width="50"> **The file** `setub.bat` **downloads Python packages PyPI** [![PyPI](https://img.shields.io/badge/PyPI-3775A9?logo=pypi&logoColor=fff)](#)
+<img src="icon\PyPI.png" alt="pip" width="50"> **The file** `setub.bat` **downloads Python packages PyPI** [![PyPI](https://img.shields.io/badge/PyPI-3775A9?logo=pypi&logoColor=fff)](#)
  
 ---
 
