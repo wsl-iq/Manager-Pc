@@ -1778,7 +1778,7 @@ _________
 
                     elif chpoce_cpp == '6':
                         clear_screen_terminal()
-                        print(f'''{Y}
+                        print(rf'''{Y}
   _   _           _         _     
  | \ | | ___   __| | ___   (_)___ 
  |  \| |/ _ \ / _` |/ _ \  | / __|
