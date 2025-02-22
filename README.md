@@ -174,5 +174,4 @@ $ python uninstall.py
 
 - [![MasterCard](https://img.shields.io/badge/MasterCard-EB001B?logo=mastercard&logoColor=fff)](#)
 - **Account Holder Name :** `Mohammed Al-Baqer`  
-- **Account Number :** `4582149961` 
 - **IBAN :** `IQ70RAFB098010010177891` 
