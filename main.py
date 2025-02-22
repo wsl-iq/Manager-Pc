@@ -1679,8 +1679,9 @@ def main():
                     print(f'{G}[2] {B}Installing {Y}C++ {B}System Components{W}')
                     print(f'{G}[3] {B}installing {M}C# {G}.NET SDK {B}for Windows{W}')
                     print(f'{G}[4] {B}installing Microsoft Visual Studio 2022 for Windows{W}')
-                    print(f'{G}[5] {Y}downloading PyCharm Python IDLE for Windows{W}')
-                    print(f'{G}[6] {Y}Exit{W}')
+                    print(f'{G}[5] {B}downloading PyCharm Python IDLE for Windows{W}')
+                    print(f'{G}[6] {B}Download Frameworks node.js{W}')
+                    print(f'{G}[7] {Y}Exit{W}')
                     chpoce_cpp = input(f'{Enter} Enter choice options: {Y}')
 
                     if chpoce_cpp == '1':
@@ -1776,6 +1777,37 @@ _________
                         break
 
                     elif chpoce_cpp == '6':
+                        clear_screen_terminal()
+                        print(f'''{Y}
+  _   _           _         _     
+ | \ | | ___   __| | ___   (_)___ 
+ |  \| |/ _ \ / _` |/ _ \  | / __|
+ | |\  | (_) | (_| |  __/_ | \__ \
+ |_| \_|\___/ \__,_|\___(_)/ |___/
+                         |__/     {W}\n''')
+                        print(f'{G}[1] {B}Download Frameworks Node.js (.zip)')
+                        print(f'{G}[2] {B}Download Frameworks Node.js (.msi)')
+                        print(f'{G}[3] {B}Exit{W}')
+                        node_js = input(f'{Enter} Enter choice option: ')
+
+                        if node_js == '1':
+                            webbrowser.open('https://nodejs.org/dist/v22.14.0/node-v22.14.0-win-x64.zip')
+                            Back_Menu()
+                            break
+                        
+                        elif node_js == '2':
+                            webbrowser.open('https://nodejs.org/dist/v22.14.0/node-v22.14.0-x64.msi')
+                            Back_Menu()
+                            break
+                        
+                        elif node_js == '3':
+                            Back_Menu()
+                            break
+
+                        else:
+                            sys.exit(0)
+
+                    elif chpoce_cpp == '7':
                         Back_Menu()
                         break
 
