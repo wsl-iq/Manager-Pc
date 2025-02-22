@@ -70,11 +70,9 @@ For inquiries or support, please contact the developer via GitHub or through the
 ```
 $ setup.bat
 ```
-
-[![PyPI](https://img.shields.io/badge/PyPI-3775A9?logo=pypi&logoColor=fff)](#)
   
-- `The file` **setub.bat** `downloads Python packages`
-
+- **The file** `setub.bat` **downloads Python packages PyPI** [![PyPI](https://img.shields.io/badge/PyPI-3775A9?logo=pypi&logoColor=fff)](#)
+ 
 ---
 
 ### Run Application as Administrator
@@ -168,3 +166,10 @@ $ python main.py
 ```
 $ python uninstall.py
 ```
+
+---
+
+- [![MasterCard](https://img.shields.io/badge/MasterCard-EB001B?logo=mastercard&logoColor=fff)](#)
+- **Account Holder Name :** `Mohammed Al-Baqer`  
+- **Account Number :** `4582149961` 
+- **IBAN :** `IQ70RAFB098010010177891`
