@@ -4,7 +4,7 @@
 ## ![Connect](https://img.shields.io/badge/Manager_PC-For_Windows-0056D2?style=for-the-badge&logo=windows&logoColor=white)
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Windows_logo_-_2012_%28dark_blue%29.svg/1200px-Windows_logo_-_2012_%28dark_blue%29.svg.png" alt="Windows Logo" width="50" height="50">
 
-## ![Connect](https://img.shields.io/badge/version_:_3.1.0-0056D2?style=for-the-badge&logo=links&logoColor=white)
+## ![Connect](https://img.shields.io/badge/version_:_3.1.1-0056D2?style=for-the-badge&logo=links&logoColor=white)
 
 
 # About Manager PC
