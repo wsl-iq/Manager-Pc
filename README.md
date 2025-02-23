@@ -30,7 +30,7 @@ This program was developed using:
 
 ## Installation
 To use **Manager PC** , follow these steps:
-1. Download the program from the repository `OR` Click For Download [![Download](https://img.shields.io/badge/-Download_Manager_Pc-gray?style=flat-square&logo=github)](https://github.com/wsl-iq/Manager-Pc/archive/refs/heads/main.zip)
+1. Download the program from the repository `OR` Click For button Download [![Download](https://img.shields.io/badge/-Download_Manager_Pc-gray?style=flat-square&logo=github)](https://github.com/wsl-iq/Manager-Pc/archive/refs/heads/main.zip)
 2. Ensure you have **Python 3.8+** installed on your system.
 3. Run the executable file or execute the Python script directly using `python main.py` .
 
