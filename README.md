@@ -24,13 +24,13 @@
 ## Development
 
 This program was developed using:
-- **Python** ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) . a versatile programming language known for its reliability and extensive libraries.
+- **Python** ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white), a versatile programming language known for its reliability and extensive libraries.
 
 ---
 
 ## Installation
 To use **Manager PC** , follow these steps:
-1. Download the program from the repository.
+1. Download the program from the repository `OR` Click For Download [![Download](https://img.shields.io/badge/-Download_Manager_Pc-gray?style=flat-square&logo=github)](https://github.com/wsl-iq/Manager-Pc/archive/refs/heads/main.zip)
 2. Ensure you have **Python 3.8+** installed on your system.
 3. Run the executable file or execute the Python script directly using `python main.py` .
 
@@ -146,8 +146,7 @@ $ python main.py
 - 🔹 **Download MocroSoft Visual Studio 2022 (IDE)** [![Visual Studio](https://custom-icon-badges.demolab.com/badge/Visual%20Studio-5C2D91.svg?&logo=visual-studio&logoColor=white)](#)
 - 🔹 **Download Microsoft Visual Studio Code (VS Code)** [![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=vsc&logoColor=white)](#)
 - 🔹 **Download Edit code Python IDLE** [![Python IDLE](https://img.shields.io/badge/Python%20IDLE-3776AB?logo=python&logoColor=fff)](#)
-- 🔹 **Downloading PyCharm Python IDLE** [![PyCharm](https://img.shields.io/badge/PyCharm-000?logo=pycharm&logoColor=fff)](#)
-- 🔹 **Download Framework Node.js** [![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white)](#)
+- 🔹 **downloading PyCharm Python IDLE** [![PyCharm](https://img.shields.io/badge/PyCharm-000?logo=pycharm&logoColor=fff)](#)
 
 ---
 
