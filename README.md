@@ -4,7 +4,7 @@
 ## ![Connect](https://img.shields.io/badge/Manager_PC-For_Windows-0056D2?style=for-the-badge&logo=windows&logoColor=white)
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Windows_logo_-_2012_%28dark_blue%29.svg/1200px-Windows_logo_-_2012_%28dark_blue%29.svg.png" alt="Windows Logo" width="50" height="50">
 
-## ![Connect](https://img.shields.io/badge/version_:_3.1.1-0056D2?style=for-the-badge&logo=links&logoColor=white)
+## ![Connect](https://img.shields.io/badge/version_:_3.1.0-0056D2?style=for-the-badge&logo=links&logoColor=white)
 
 
 # About Manager PC
@@ -121,7 +121,7 @@ $ python main.py
 ---
 
 ### 🛜 **Network and Connectivity**
-- 🔹 **Monitor Network Traffic**: Track and log network traffic in CSV, JSON, or DB files.
+- 🔹 **Monitor Network Traffic**: Track and log network traffic in **CSV** , **JSON** , **DB** files.
 - 🔹 **Display Network Information**: View IP address, connection speed, and other network details.
 - 🔹 **Show Saved Wi-Fi Passwords**: Reveal the saved passwords for connected Wi-Fi networks.
 - 🔹 **Open Port Forwarding**
@@ -146,7 +146,8 @@ $ python main.py
 - 🔹 **Download MocroSoft Visual Studio 2022 (IDE)** [![Visual Studio](https://custom-icon-badges.demolab.com/badge/Visual%20Studio-5C2D91.svg?&logo=visual-studio&logoColor=white)](#)
 - 🔹 **Download Microsoft Visual Studio Code (VS Code)** [![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=vsc&logoColor=white)](#)
 - 🔹 **Download Edit code Python IDLE** [![Python IDLE](https://img.shields.io/badge/Python%20IDLE-3776AB?logo=python&logoColor=fff)](#)
-- 🔹 **downloading PyCharm Python IDLE** [![PyCharm](https://img.shields.io/badge/PyCharm-000?logo=pycharm&logoColor=fff)](#)
+- 🔹 **Downloading PyCharm Python IDLE** [![PyCharm](https://img.shields.io/badge/PyCharm-000?logo=pycharm&logoColor=fff)](#)
+- 🔹 **Download Framework Node.js** [![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white)](#)
 
 ---
 
