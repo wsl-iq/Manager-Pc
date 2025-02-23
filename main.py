@@ -71,6 +71,7 @@ from commanding import BIOS
 from commanding.killer7 import TaskManager
 from commanding.OSINT_Instagram import Information_Instagram
 from commanding.OSINT_Instagram import find_phone_insta
+from commanding.language_coding import programming
 from commanding import version
 
 def notification():
@@ -1338,7 +1339,7 @@ def Banner():
 |     |___ ___ ___ ___ ___ ___   |  _  |___ 
 | | | | .'|   | .'| . | -_|  _|  |   __|  _|
 |_|_|_|__,|_|_|__,|_  |___|_|    |__|  |___|
-                  |___| \n{B}version : 3.1.0                
+                  |___| \n{B}version : 3.1.1                
 {W}''')
 
 def table():
@@ -2031,19 +2032,13 @@ ______ ____ ___/  |_|  |__   ____   ____
                 Drowing = f'{R}~{M}>'
 
                 slowprint(f'''{G}Hello everyone
-{B}I introduce myself as 
 {Drowing}{Y} Mohammed Al-Baqer
-{Drowing}{Y} From Iraq 
-{M}an independent software developer specializing in the famous programming language Python{B}
-I developed this program specifically to manage your Windows system well
-and it has most of the auxiliary tools
-you need in your system from networks security and control of system management and components
-For more subscribe to my Telegram channel.{W}\n''')
+{Drowing}{Y} From Iraq{W}\n''')
+                programming.languages_code()
                 version.version_App()
-                
-                channel_Telegram = input(f'{Question} Do you want to visit the channels me? (y/n): ')
+                channel = input(f'{Question} Do you want to visit the channels me? (y/n): ')
 
-                if channel_Telegram == 'y' or channel_Telegram == 'Y':
+                if channel == 'y' or channel == 'Y':
                     print(f'{Running} channels is being opened{W}')
 
                     def loading():
@@ -2060,7 +2055,7 @@ For more subscribe to my Telegram channel.{W}\n''')
                     Back_Menu()
                     break
 
-                elif channel_Telegram == 'n' or channel_Telegram == 'N':
+                elif channel == 'n' or channel == 'N':
                     print(f'{sign} Thank you for visiting the program.{W}\n')
                     Back_Menu()
                     break
