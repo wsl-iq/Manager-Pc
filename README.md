@@ -24,7 +24,7 @@
 ## Development
 
 This program was developed using:
-- **Python** ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white), a versatile programming language known for its reliability and extensive libraries.
+- **Python** ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) a versatile programming language known for its reliability and extensive libraries.
 
 ---
 
@@ -39,11 +39,6 @@ To use **Manager PC** , follow these steps:
 ## Requirements
 - **Operating System**: Windows 7, 8, 10, or 11.
 - **Python**: Version 3.8 or higher.
-
----
-
-## Screenshots
-Add screenshots or additional visuals here if available.
 
 ---
 
