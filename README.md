@@ -162,3 +162,14 @@ $ python main.py
 ```
 $ python uninstall.py
 ```
+
+---
+
+# ![Profile](https://img.shields.io/badge/Programming_languages_Using-blue?style=for-the-badge&logo=logoColor=white)
+
+![Python](https://img.shields.io/badge/Language-Python-blue?logo=python&logoColor=blue)
+![Batchfile](https://img.shields.io/badge/Scripting-Batchfile-green?logo=windows-terminal&logoColor=white)
+![PowerShell](https://img.shields.io/badge/Scripting-PowerShell-blue?logo=powershell&logoColor=white)
+![HTML](https://img.shields.io/badge/Language-HTML-orange?logo=html5&logoColor=orange)
+![CSS](https://img.shields.io/badge/Language-CSS-blue?logo=css3&logoColor=blue)
+![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow?logo=javascript&logoColor=yellow)
