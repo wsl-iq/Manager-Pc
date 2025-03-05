@@ -73,6 +73,34 @@ from commanding.OSINT_Instagram import Information_Instagram
 from commanding.OSINT_Instagram import find_phone_insta
 from commanding.language_coding import programming
 from commanding import version
+from commanding import Temp
+from Project.c import c
+from Project.cpp import cpp
+from Project.sc import Framework_SDK_NET
+from Project.java import java
+from Project.php import php
+from Project.JavaScript.Adonis_JS import ADONIS
+from Project.JavaScript.Angular import ANGULAR
+from Project.JavaScript.Electron import ELECTRON
+from Project.JavaScript.Express_JS import EXPRESS
+from Project.JavaScript.Fastify import FASTIFY
+from Project.JavaScript.Nest_JS import NEST
+from Project.JavaScript.Node_JS import NODE
+from Project.JavaScript.NW_JS import NW
+from Project.JavaScript.React_JS import REACT
+from Project.JavaScript.Svelte import SVELTE
+from Project.JavaScript.Tauri import TAURI
+from Project.JavaScript.Vue_js import VUE
+from Project.JavaScript.Windows_UWP import WINDOWS_UWP
+from Project.JavaScript.WinUI3 import WINUI3
+from Project.python import python
+from Application.ExecuTable.MicroSoft_Visual_Studio import(
+    Community,
+    Enterprise,
+    Professional
+)
+from Application.ExecuTable.VS_Code import vsCode
+from Application import PyCharm
 
 def notification():
     try:
@@ -559,6 +587,7 @@ def uninstall_wsl():
                 )
                 print(f"Command executed successfully: {command}")
                 print(f"Output:\n{result.stdout}")
+                Temp.Temp()
 
             except subprocess.CalledProcessError as e:
                 print(f"{Failed} Error executing command: {command}")
@@ -1339,7 +1368,7 @@ def Banner():
 |     |___ ___ ___ ___ ___ ___   |  _  |___ 
 | | | | .'|   | .'| . | -_|  _|  |   __|  _|
 |_|_|_|__,|_|_|__,|_  |___|_|    |__|  |___|
-                  |___| \n{B}version : 3.1.1                
+                  |___| \n{B}version : 3.2.0               
 {W}''')
 
 def table():
@@ -1359,8 +1388,9 @@ def table():
     table.add_row([f'{G}11{W}', f'{Y}zip file or folder{W}'])
     table.add_row([f'{G}12{W}', f'{Y}Tools MicroSoft Windows{W}'])
     table.add_row([f'{G}13{W}', f'{Y}osint informations{W}'])
-    table.add_row([f'{G}14{W}', f'{Y}About Developr the Application{W}'])
-    table.add_row([f'{G}15{W}', f'{Y}Uninstall Manager Pc{W}'])
+    table.add_row([f'{G}14{W}', f'{Y}Cyber Security and Ethical hacking and Penetration Testing{W}'])
+    table.add_row([f'{G}15{W}', f'{Y}About Developr the Application{W}'])
+    table.add_row([f'{G}16{W}', f'{Y}Uninstall Manager Pc{W}'])
     print(table)
     DateTime()
 
@@ -1674,87 +1704,69 @@ def main():
  | (__   _   \ \   > >      
   \___| (_)   \_\ /_/   ___ 
                        |___|
-  {G}By {W}: {B}Mohammed Al-Baqer{W}''')
+''')
                     print('\n ' + G + '{' + B + '<' + Y + '/' + B + '>' + M + '_' + G + '}' + f'\n{B} CODE\n{G} IS ASCLL ART\n' + W)
-                    print(f'{G}[1] {B}installing software or setting up components on a Windows system{W}')
-                    print(f'{G}[2] {B}Installing {Y}C++ {B}System Components{W}')
-                    print(f'{G}[3] {B}installing {M}C# {G}.NET SDK {B}for Windows{W}')
-                    print(f'{G}[4] {B}installing Microsoft Visual Studio 2022 for Windows{W}')
-                    print(f'{G}[5] {B}downloading PyCharm Python IDLE for Windows{W}')
-                    print(f'{G}[6] {B}Download Frameworks node.js{W}')
-                    print(f'{G}[7] {Y}Exit{W}')
-                    chpoce_cpp = input(f'{Enter} Enter choice options: {Y}')
+                    print(f'{G}[1] {B}Installing {Y}MicroSoft C++ {B}System Components{W}')
+                    print(f'{G}[2] {B}Installing {M}C {B}IDE for Windows{W}')
+                    print(f'{G}[3] {B}installing {M}C# {B}.NET SDK {B}for Windows{W}')
+                    print(f'{G}[4] {B}installing {M}C++ {B}IDE for Windows for Windows{W}')
+                    print(f'{G}[5] {B}installing {Y}Microsoft Visual Studio 2022 {B}for Windows{W}')
+                    print(f'{G}[6] {B}installing {Y}Microsoft Visual Studio Code {B}for Windows{W}')
+                    print(f'{G}[7] Download {G}PyCharm {B}IDE for Windows{W}')
+                    print(f'{G}[8] Download {G}Java {B}IDE for Windows{W}')
+                    print(f'{G}[9] Download {G}JavaScript Frameworks {B}IDE for Windows{W}')
+                    print(f'{G}[10] Download {G}PHP {B}IDE for Windows{W}')
+                    print(f'{G}[11] Download {G}Python {B}IDE for Windows{W}')
+                    print(f'{G}[12] Exit{W}')
 
-                    if chpoce_cpp == '1':
-                        clear_screen_terminal()
-                        print(f'''
-{S}          {Back.RED}     {Back.GREEN}     {S}
-{S}          {Back.RED}     {Back.GREEN}     {S}
-{S}          {Back.BLUE}     {Back.YELLOW}     {S}
-{S}          {Back.BLUE}     {Back.YELLOW}     {S}{C}                                                                              
-{W}''')
-                        os.chdir('PackageMicrosoft')
-                        subprocess.run(['msiexec', '/i', 'setup.msi'], check=True)
-                        Back_Menu()
-                        break
+                    print(f'{G}[6] {Y}Exit{W}')
+                    Frameworks = input(f'{Enter} Enter choice options: {Y}')
 
-                    elif chpoce_cpp == '2':
+                    if Frameworks == '1':
                         clear_screen_terminal()
-                        print(f'''{B}
-_________                    
-\_   ___ \    __       __    
-/    \  \/ __|  |_____|  |___
-\     \______    __/__    __/
- \______  /  |__|     |__|   
-        \/                   
-{G}By {W}: {B}Mohammed Al-Baqer{W}''')
                         os.chdir('PackageMicrosoft')
                         subprocess.run(['cmd', '/c', 'install_all.bat'], check=True)
                         Back_Menu()
                         break
 
-                    elif chpoce_cpp == '3':
+                    elif Frameworks == '2':
                         clear_screen_terminal()
-                        print(f'''{M}
- ▄▄█▀▀▀▄█           
-▄█▀     ▀    ██ ██   
-██         █████████ 
-▀█▄      ▄   ██ ██   
- ▀▀█▄▄▄▄▀  █████████ 
-             ██ ██   
-{G}By {W}: {B}Mohammed Al-Baqer{W}''')
-                        webbrowser.open('https://dotnet.microsoft.com/en-us/download/dotnet/8.0')
+                        c.C()
                         Back_Menu()
                         break
 
-                    elif chpoce_cpp == '4':
+                    elif Frameworks == '3':
                         clear_screen_terminal()
-                        print(f'''{G}
-   ___   _  __    __        
-  / __| (_) \ \   \ \       
- | (__   _   \ \   > >      
-  \___| (_)   \_\ /_/   ___ 
-                       |___|
-    {G}By {W}: {B}Mohammed Al-Baqer {W}''')
+                        Framework_SDK_NET.Framework()
+                        Back_Menu()
+                        break
+
+                    elif Frameworks == '4':
+                        clear_screen_terminal()
+                        cpp.CPP()
+                        Back_Menu()
+                        break
+
+                    elif Frameworks == '5':
+                        clear_screen_terminal()
                         print(f'{G}[1] {B}Microsoft Visual Studio 2022 (Community){W}')
                         print(f'{G}[2] {B}Microsoft Visual Studio 2022 (Professional){W}')
                         print(f'{G}[3] {B}Microsoft Visual Studio 2022 (Enterprise){W}')
                         print(f'{G}[4] {B}Exit{W}')
-
                         VS = input('Enter version Microsoft Visual Studio IDE: ')
 
                         if VS == '1':
-                            webbrowser.open('https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false')
+                            Community.Community()
                             Back_Menu()
                             break
 
                         elif VS == '2':
-                            webbrowser.open('https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false')
+                            Professional.Professional()
                             Back_Menu()
                             break
 
                         elif VS == '3':
-                            webbrowser.open('https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false')
+                            Enterprise.Enterprise()
                             Back_Menu()
                             break
 
@@ -1765,60 +1777,157 @@ _________
                         else:
                             sys.exit(0)
 
-                    elif chpoce_cpp == '5':
+                    elif Frameworks == '6':
                         clear_screen_terminal()
-                        print(f'''{B}         
- _____     _____ _                 
-|  _  |_ _|     | |_ ___ ___ _____ 
-|   __| | |   --|   | .'|  _|     |
-|__|  |_  |_____|_|_|__,|_| |_|_|_|
-      |___|                        {W}\n''')
-                        webbrowser.open('https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows')
+                        vsCode.vscode()
+                        Back_Menu()
+                        break
+                    
+                    elif Frameworks == '7':
+                        clear_screen_terminal()
+                        PyCharm.PyCharm()
                         Back_Menu()
                         break
 
-                    elif chpoce_cpp == '6':
+                    elif Frameworks == '8':
                         clear_screen_terminal()
-                        print(rf'''{Y}
-  _   _           _         _     
- | \ | | ___   __| | ___   (_)___ 
- |  \| |/ _ \ / _` |/ _ \  | / __|
- | |\  | (_) | (_| |  __/_ | \__ \
- |_| \_|\___/ \__,_|\___(_)/ |___/
-                         |__/     {W}\n''')
-                        print(f'{G}[1] {B}Download Frameworks Node.js (.zip)')
-                        print(f'{G}[2] {B}Download Frameworks Node.js (.msi)')
-                        print(f'{G}[3] {B}Exit{W}')
-                        node_js = input(f'{Enter} Enter choice option: ')
+                        java.JAVA()
+                        Back_Menu()
+                        break
 
-                        if node_js == '1':
-                            webbrowser.open('https://nodejs.org/dist/v22.14.0/node-v22.14.0-win-x64.zip')
+                    elif Frameworks == '9':
+                        clear_screen_terminal()
+                        print(f'{G}[1] Download Frameworks for JavaScript{B}(Adonis.js){W}')
+                        print(f'{G}[2] Download Frameworks for JavaScript{B}(Angular){W}')
+                        print(f'{G}[3] Download Frameworks for JavaScript{B}(Electron){W}')
+                        print(f'{G}[4] Download Frameworks for JavaScript{B}(Express.js){W}')
+                        print(f'{G}[5] Download Frameworks for JavaScript{B}(Fastify){W}')
+                        print(f'{G}[6] Download Frameworks for JavaScript{B}(Nest.js){W}')
+                        print(f'{G}[7] Download Frameworks for JavaScript{B}(Node.js){W}')
+                        print(f'{G}[8] Download Frameworks for JavaScript{B}(NW.js){W}')
+                        print(f'{G}[9] Download Frameworks for JavaScript{B}(React.js){W}')
+                        print(f'{G}[10] Download Frameworks for JavaScript{B}(Svelte){W}')
+                        print(f'{G}[11] Download Frameworks for JavaScript{B}(Tauri){W}')
+                        print(f'{G}[12] Download Frameworks for JavaScript{B}(Vue.js){W}')
+                        print(f'{G}[13] Download Frameworks for JavaScript{B}(Windows UWP){W}')
+                        print(f'{G}[14] Download Frameworks for JavaScript{B}(WinUI3){W}')
+                        print(f'{G}[15] Back Home{W}')
+
+                        JavaScript = input(f'\n{R}┌─[{M}Mohammed Al-Baqer{Y}@{B}WSL.IQ{R}]─[{G}Enter number options{R}]\n└──╼ {R}>{Y}>{G}>{B} ')
+                        
+                        if JavaScript == '1':
+                            clear_screen_terminal()
+                            ADONIS.ADONIS()
                             Back_Menu()
                             break
-                        
-                        elif node_js == '2':
-                            webbrowser.open('https://nodejs.org/dist/v22.14.0/node-v22.14.0-x64.msi')
+
+                        elif JavaScript == '2':
+                            clear_screen_terminal()
+                            ANGULAR.ANGULAR()
                             Back_Menu()
                             break
-                        
-                        elif node_js == '3':
+
+                        elif JavaScript == '3':
+                            clear_screen_terminal()
+                            ELECTRON.ELECTRON()
+                            Back_Menu()
+                            break
+
+                        elif JavaScript == '4':
+                            clear_screen_terminal()
+                            EXPRESS.EXPRESS()
+                            Back_Menu()
+                            break
+
+                        elif JavaScript == '5':
+                            clear_screen_terminal()
+                            FASTIFY.FASTIFY()
+                            Back_Menu()
+                            break
+
+                        elif JavaScript == '6':
+                            clear_screen_terminal()
+                            NEST.NEST()
+                            Back_Menu()
+                            break
+
+                        elif JavaScript == '7':
+                            clear_screen_terminal()
+                            NODE.NODE()
+                            Back_Menu()
+                            break
+
+                        elif JavaScript == '8':
+                            clear_screen_terminal()
+                            NW.NW()
+                            Back_Menu()
+                            break
+
+                        elif JavaScript == '9':
+                            clear_screen_terminal()
+                            REACT.REACT()
+                            Back_Menu()
+                            break
+
+                        elif JavaScript == '10':
+                            clear_screen_terminal()
+                            SVELTE.SVELTE()
+                            Back_Menu()
+                            break
+
+                        elif JavaScript == '11':
+                            clear_screen_terminal()
+                            TAURI.TAURI()
+                            Back_Menu()
+                            break
+
+                        elif JavaScript == '12':
+                            clear_screen_terminal()
+                            VUE.VUE()
+                            Back_Menu()
+                            break
+
+                        elif JavaScript == '13':
+                            clear_screen_terminal()
+                            WINDOWS_UWP.WINDOWS_UWP()
+                            Back_Menu()
+                            break
+
+                        elif JavaScript == '4':
+                            clear_screen_terminal()
+                            WINUI3.WINUI3()
+                            Back_Menu()
+                            break
+
+                        elif JavaScript == '15':
                             Back_Menu()
                             break
 
                         else:
-                            sys.exit(0)
+                            continue
 
-                    elif chpoce_cpp == '7':
+                    elif Frameworks == '10':
+                        clear_screen_terminal()
+                        php.PHP()
+                        Back_Menu()
+                        break
+
+                    elif Frameworks == '11':
+                        clear_screen_terminal()
+                        python.PYTHON()
+                        Back_Menu()
+                        break
+                   
+                    elif Frameworks == '12':
                         Back_Menu()
                         break
 
                     else:
                         continue
 
-                except Exception:
+                except KeyboardInterrupt:
                     pass
-                    Back_Menu()
-                    break
+
 
             elif choice == '8':
                 table = PrettyTable()
@@ -2024,8 +2133,13 @@ ______ ____ ___/  |_|  |__   ____   ____
                 elif info_insta == '99':
                     Back_Menu()
                     break
-
+            
             elif choice == '14':
+                clear_screen_terminal()
+                print(f'{G}[1] {B}Camera Hacking{B}')
+
+
+            elif choice == '15':
                 notification()
                 clear_screen_terminal()
                 print(background("\033[97;1m" + " About Developer ", "Yellow"))
@@ -2063,7 +2177,7 @@ ______ ____ ___/  |_|  |__   ____   ____
                 else:
                     continue
 
-            elif choice == '15':
+            elif choice == '16':
                 clear_screen_terminal()
                 uninstall.uninstall()
                 Back_Menu()
