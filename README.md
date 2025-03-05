@@ -45,6 +45,8 @@ To use **Manager PC** , follow these steps:
 ## Requirements for 
 - **Operating System**: `Windows` **7** , **8** , **10** , **11**
 - **Python**: Version 3.8 `or` higher.
+- **Build Tool Visual Studio** `Click here for Download` [![Visual Studio](https://custom-icon-badges.demolab.com/badge/Visual%20Studio-Build_Tool-5C2D91.svg?&logo=visual-studio&logoColor=white)](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false)
+
 
 ---
 
@@ -136,7 +138,7 @@ $ python main.py
 - [![Fedora](https://img.shields.io/badge/Fedora-51A2DA?logo=fedora&logoColor=fff)](#)
 - [![Kali Linux](https://img.shields.io/badge/Kali%20Linux-557C94?logo=kalilinux&logoColor=fff)](#)
 - 🔹 **Install Required Libraries**: Easily install essential libraries for better performance.
-- 🔹 **Microsoft C++**: Automatically installs necessary Microsoft C++ libraries ![C++](https://img.shields.io/badge/-C++-3776AB?style=flat-square&logo=C%2B%2B&logoColor=white)
+- 🔹 **Microsoft C++**: Automatically installs necessary **Microsoft C++** libraries ![C++](https://img.shields.io/badge/-C++-3776AB?style=flat-square&logo=C%2B%2B&logoColor=white)
 - 🔹 **Download SDK .NET C#** [![C#](https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?logo=cshrp&logoColor=white)](#) . [![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=fff)](#)
 - 🔹 **Download MocroSoft Visual Studio 2022 (IDE)** [![Visual Studio](https://custom-icon-badges.demolab.com/badge/Visual%20Studio-5C2D91.svg?&logo=visual-studio&logoColor=white)](#)
 - 🔹 **Download Microsoft Visual Studio Code (VS Code)** [![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=vsc&logoColor=white)](#)
