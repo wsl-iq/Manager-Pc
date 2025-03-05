@@ -1,5 +1,5 @@
 def version_App():
-    __version__ = "3.1.1"
+    __version__ = "3.2.0"
     __release_date__ = "Copyright (c) 2024-2025"
     __description__ = "This is the second release of the application with new features and improvements."
     __author__ = "Mohammed Al-Baqer"
