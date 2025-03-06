@@ -187,6 +187,13 @@ $ python main.py
 
 ---
 
+### **For Update** `Manager Pc`
+```
+$ update.bat
+```
+
+---
+
 ### **For Uninstall** `Manager Pc` 
 
 ```
@@ -220,3 +227,8 @@ Since the program does not handle personal data, there is no data to modify or d
 6. **Updates:**
 We may update the Privacy Policy from time to time, but this will not affect the data collection practices.
 </details>
+
+---
+
+
+
