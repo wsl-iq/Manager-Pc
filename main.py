@@ -1391,6 +1391,7 @@ def table():
     table.add_row([f'{G}14{W}', f'{Y}Cyber Security and Ethical hacking and Penetration Testing{W}'])
     table.add_row([f'{G}15{W}', f'{Y}About Developr the Application{W}'])
     table.add_row([f'{G}16{W}', f'{Y}Uninstall Manager Pc{W}'])
+    table.add_row([f'{G}17{W}', f'{Y}Update Manager Pc{W}'])
     print(table)
     DateTime()
 
@@ -2180,6 +2181,17 @@ ______ ____ ___/  |_|  |__   ____   ____
             elif choice == '16':
                 clear_screen_terminal()
                 uninstall.uninstall()
+                Back_Menu()
+                break
+
+            elif choice == '17':
+                clear_screen_terminal()
+                current_directory = os.path.dirname(os.path.realpath(__file__))
+                bat_file_path = os.path.join(current_directory, "update.bat")
+                try:
+                    subprocess.run([bat_file_path], check=True, shell=True)
+                except subprocess.CalledProcessError as e:
+                    print(ERROR + str(e))
                 Back_Menu()
                 break
 
