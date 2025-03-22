@@ -17,15 +17,21 @@ def uninstall():
 
             if uninstall_choice == '1':
                 items_to_remove = [
-                    'command',
+                    'commanding',
                     'icon',
+                    'Application'
                     'PackageMicrosoft',
                     'server',
                     'html',
-                    'About.txt',
+                    'Project'
                     'desktop.ini',
+                    'LICENSE'
+                    'ManagerPc.bat'
+                    'README.md'
                     'setup.bat',
+                    'update.bat' 
                     'run.exe'
+                    'main.py'
                 ]
 
                 for item in items_to_remove:
