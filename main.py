@@ -73,6 +73,7 @@ from commanding.OSINT_Instagram import find_phone_insta
 from commanding.language_coding import programming
 from commanding import version
 from commanding.DelWSL import Temp
+from commanding.WinPc import win
 from Project.c import c
 from Project.cpp import cpp
 from Project.sc import Framework_SDK_NET
@@ -1464,7 +1465,8 @@ def main():
                 print(f'{G}[10] {Y}open BIOS{G}')
                 print(f'{G}[11] {Y}Fix Bug problem Windows system{W}')
                 print(f'{G}[12] {Y}task manager security windows system{W}')
-                print(f'{G}[13] {Y}exit{G}')
+                print(f'{G}[13] {Y}chacking License Windows{W}')
+                print(f'{G}[14] {Y}exit{G}')
 
                 choice_security = input(f'{Enter} Enter choice from option:{Y} ')
 
@@ -1572,6 +1574,12 @@ def main():
                         break
 
                 elif choice_security == '13':
+                    clear_screen_terminal()
+                    win.run()
+                    Back_Menu()
+                    break
+
+                elif choice_security == '14':
                     Back_Menu()
                     break
 
