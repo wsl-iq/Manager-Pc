@@ -1,4 +1,6 @@
+import os
+
 def run():
-    import os; os.system('licenseWin.cmd')
+    os.system('slmgr.vbs /dli')
 if __name__ == '__main__':
     run()
