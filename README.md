@@ -4,7 +4,7 @@
 ### ![Connect](https://img.shields.io/badge/Manager_PC-For_Windows-0056D2?style=for-the-badge&logo=windows&logoColor=white)
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Windows_logo_-_2012_%28dark_blue%29.svg/1200px-Windows_logo_-_2012_%28dark_blue%29.svg.png" alt="Windows Logo" width="50" height="50">
 
-### ![Connect](https://img.shields.io/badge/version_:_3.2.1-0056D2?style=for-the-badge&logo=links&logoColor=white)
+### ![Connect](https://img.shields.io/badge/version_:_3.2.0-0056D2?style=for-the-badge&logo=links&logoColor=white)
 
 ---
 
@@ -13,6 +13,14 @@
  [![Markdown](https://img.shields.io/badge/Markdown-%23000000.svg?logo=markdown&logoColor=white)](#)
 
 ---
+
+- ### To donate and support the Developer to continue providing the best projects by **Buy Me a Coffee**
+
+- [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?&logo=buy-me-a-coffee&logoColor=black)](buymeacoffee.com/wsl.iq)
+
+---
+
+
 # About Manager PC [![Windows](https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white)](#)
 
 **Manager PC** is a powerful and efficient tool designed exclusively for **Windows** operating systems. This program offers a wide range of features aimed at enhancing productivity and system management. 
@@ -113,6 +121,7 @@ $ python main.py
 - 🔹 **Generate password GUI**
 - 🔹 **Task Manager security windows system**
 - 🔹 **System Process Monitoring**
+- 🔹 **Chacking License for Windows**
 
 
 ---
@@ -126,6 +135,8 @@ $ python main.py
 - 🔹 **Search on proxy working**
 
 ---
+
+- ### **Features that help you download and install programs and applications easily :**
 
 ### ⚙️🛠️ **Tool Installation**
 - 🔹 **Install WSL (Windows Subsystem for Linux)**: Install and manage different Linux distributions on Windows
@@ -187,14 +198,14 @@ $ python main.py
 
 ---
 
-### **For Update** `Manager Pc`
+### Update **Manager Pc**
 ```
 $ update.bat
 ```
 
 ---
 
-### **For Uninstall** `Manager Pc` 
+### Uninstall **Manager Pc** 
 
 ```
 $ python uninstall.py
@@ -229,6 +240,4 @@ We may update the Privacy Policy from time to time, but this will not affect the
 </details>
 
 ---
-
-
 
