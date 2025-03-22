@@ -60,20 +60,19 @@ from commanding.network import proxy
 from commanding.network import chack_network_system
 from commanding.system import SystemWinsows
 from commanding import WindowsGet
-from commanding import zip
 from commanding.design.colors import(R, G, B, Y, C, M, W, D, S)
 from commanding.design.Terminal import(sign, Enter, ERROR, INFO, Information, Working, NotWorking, warning,
                             Complete, successfully, Failed, please, Question, Help, note, other, 
                             Running, Retrying, Ready, Loading, OK, Okay, stop, Critical, paused,
                             Retrying, Skip, SCAN, Chacking, Hacking, security, AI)
 from commanding.design.BackGround import(Red, Green, Blue, Yellow, Cyan, Magenta, White, Black,Dark, Reset)
-from commanding import BIOS
+from commanding.BIOS import BIOS
 from commanding.killer7 import TaskManager
 from commanding.OSINT_Instagram import Information_Instagram
 from commanding.OSINT_Instagram import find_phone_insta
 from commanding.language_coding import programming
 from commanding import version
-from commanding import Temp
+from commanding.DelWSL import Temp
 from Project.c import c
 from Project.cpp import cpp
 from Project.sc import Framework_SDK_NET
@@ -1368,7 +1367,7 @@ def Banner():
 |     |___ ___ ___ ___ ___ ___   |  _  |___ 
 | | | | .'|   | .'| . | -_|  _|  |   __|  _|
 |_|_|_|__,|_|_|__,|_  |___|_|    |__|  |___|
-                  |___| \n{B}version : 3.2.0               
+                  |___| \n{B}version : 3.2.1               
 {W}''')
 
 def table():
@@ -1381,17 +1380,15 @@ def table():
     table.add_row([f'{G}4{W}', f'{Y}chacking update & security for windows system{W}'])
     table.add_row([f'{G}5{W}', f'{Y}Network and Communications Service{W}'])
     table.add_row([f'{G}6{W}', f'{Y}Install or Uninstall WSL Microcoft windows{W}'])
-    table.add_row([f'{G}7{W}', f'{Y}Install Driver Microsoft C++ and C# for Windows{W}'])
+    table.add_row([f'{G}7{W}', f'{Y}Features that help you download and install programs and applications easily{W}'])
     table.add_row([f'{G}8{W}', f'{Y}Dealing with Python{W}'])
     table.add_row([f'{G}9{W}', f'{Y}Gamming play classic{W}'])
-    table.add_row([f'{G}10{W}', f'{Y}Waste your time in html{W}'])
-    table.add_row([f'{G}11{W}', f'{Y}zip file or folder{W}'])
-    table.add_row([f'{G}12{W}', f'{Y}Tools MicroSoft Windows{W}'])
-    table.add_row([f'{G}13{W}', f'{Y}osint informations{W}'])
-    table.add_row([f'{G}14{W}', f'{Y}Cyber Security and Ethical hacking and Penetration Testing{W}'])
-    table.add_row([f'{G}15{W}', f'{Y}About Developr the Application{W}'])
-    table.add_row([f'{G}16{W}', f'{Y}Uninstall Manager Pc{W}'])
-    table.add_row([f'{G}17{W}', f'{Y}Update Manager Pc{W}'])
+    table.add_row([f'{G}10{W}', f'{Y}Tools MicroSoft Windows{W}'])
+    table.add_row([f'{G}11{W}', f'{Y}osint informations{W}'])
+    table.add_row([f'{G}12{W}', f'{Y}Cyber Security and Ethical hacking and Penetration Testing{W}'])
+    table.add_row([f'{G}13{W}', f'{Y}About Developr the Application{W}'])
+    table.add_row([f'{G}14{W}', f'{Y}Uninstall Manager Pc{W}'])
+    table.add_row([f'{G}15{W}', f'{Y}Update Manager Pc{W}'])
     print(table)
     DateTime()
 
@@ -1553,7 +1550,7 @@ def main():
                         BIOS.BIOS_Loading()
                         print(f'{R}~> {B}Shut Down system')
                         time.sleep(1)
-                        os.system(r'commanding\BIOS.lnk')
+                        os.system(r'commanding\BIOS\BIOS.lnk')
 
                     elif bios == 'n' or bios == 'N':
                         Back_Menu()
@@ -2021,40 +2018,6 @@ ______ ____ ___/  |_|  |__   ____   ____
 
             elif choice == '10':
                 clear_screen_terminal()
-                print(f'{G}[1] {B}drigon{W}')
-                print(f'{G}[2] {B}tracking motion car{W}')
-                print(f'{G}[3] {B}Exit{W}')
-
-                choice_html = input(f"\n{Enter} Enter choice options: {Y}")
-
-                if choice_html == '1':
-                    clear_screen_terminal()
-                    os.system(r'html\drigon.html')
-                    Back_Menu()
-                    break
-
-                elif choice_html == '2':
-                    clear_screen_terminal()
-                    os.system(r'html\tracking-motion-car.html')
-                    Back_Menu()
-                    break
-
-                elif choice_html == '3':
-                    clear_screen_terminal()
-                    Back_Menu()
-                    break
-
-                else:
-                    continue
-
-            elif choice == '11':
-                clear_screen_terminal()
-                zip.pyzip()
-                Back_Menu()
-                break
-
-            elif choice == '12':
-                clear_screen_terminal()
                 console = Console()
                 table = Table(title="Tools AI")
                 table.add_column("ID", justify="right", style="cyan", no_wrap=True)
@@ -2087,7 +2050,7 @@ ______ ____ ___/  |_|  |__   ____   ____
                 except KeyboardInterrupt:
                     pass
             
-            elif choice == '13':
+            elif choice == '11':
                 clear_screen_terminal()
                 print(f"""
        {R}_,.                   
@@ -2135,12 +2098,12 @@ ______ ____ ___/  |_|  |__   ____   ____
                     Back_Menu()
                     break
             
-            elif choice == '14':
+            elif choice == '12':
                 clear_screen_terminal()
                 print(f'{G}[1] {B}Camera Hacking{B}')
 
 
-            elif choice == '15':
+            elif choice == '13':
                 notification()
                 clear_screen_terminal()
                 print(background("\033[97;1m" + " About Developer ", "Yellow"))
@@ -2178,13 +2141,13 @@ ______ ____ ___/  |_|  |__   ____   ____
                 else:
                     continue
 
-            elif choice == '16':
+            elif choice == '14':
                 clear_screen_terminal()
                 uninstall.uninstall()
                 Back_Menu()
                 break
 
-            elif choice == '17':
+            elif choice == '15':
                 clear_screen_terminal()
                 current_directory = os.path.dirname(os.path.realpath(__file__))
                 bat_file_path = os.path.join(current_directory, "update.bat")
