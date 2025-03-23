@@ -101,6 +101,19 @@ from Application.ExecuTable.MicroSoft_Visual_Studio import(
 )
 from Application.ExecuTable.VS_Code import vsCode
 from Application import PyCharm
+from Banner import network_Banner
+from Banner import OSINT_Banner
+from Banner import psol_Banner
+from Banner import Python_Banner
+from Banner import Python_Executable_Banner
+from Banner import Python_Package_Banner
+from Banner import ShowPass_Banner
+from Banner import command_Banner
+from Banner import secrity_Banner
+from Banner import WSL_Banner
+from Banner import istp_Banner
+from Banner import Index_Banner
+from Banner import BIOS_Banner
 
 def notification():
     try:
@@ -152,17 +165,11 @@ def DateTime():
     except Exception as e:
         print(str(e))
 
-#-----------------------------------------------------------------------------------------------------------------------#
-# clear or clean screen terminal
-
 def clear_screen_terminal():
     try:
         os.system('cls' if os.name == 'nt' else 'clear')
     except Exception:
         pass
-
-#-----------------------------------------------------------------------------------------------------------------------#
-# Back to Home 
 
 def Back_Menu():
     try:
@@ -188,9 +195,6 @@ def Back_Menu():
     except Exception as e:
         print(ERROR(str(e)))
         
-#----------------------------------------------------------------------------------------------------------------------#
-#noting
-
 def note():
     try:
         while True:
@@ -206,9 +210,6 @@ def note():
     except KeyboardInterrupt:
         pass
         
-#-----------------------------------------------------------------------------------------------------------------------#
-# Network Traffic Monitoring
-
 def monitor_traffico(intervallo=1, json_filename="network_traffic.json", csv_filename="network_traffic.csv", db_name="network_traffic.db"):
     clear_screen_terminal()
     def convert_bytes(num_bytes):
@@ -280,16 +281,9 @@ def monitor_traffico(intervallo=1, json_filename="network_traffic.json", csv_fil
             json.dump(data, json_file, indent=4)
 
         os.system('cls' if os.name == 'nt' else 'clear')
-        print(f"""
-                   {G}\ | /{W}                                                     
-                  {B}-- {R}O{B} --{W}                                                    
-                    {G}/|\                    
-                   {G}/\|/\                 
-                  {G}/  |  \                 
-                 {G}/\/\|/\/\                    
-                {G}/    |    \ 
-               -     -     -{W}""")
-        
+
+        network_Banner()
+
         table = PrettyTable()
         table.field_names = [f"{Y}ID{W}", f"{B}Interfaccia{W}", f"{M}Inviati{W}", f"{G}Ricevuti{W}"]
         
@@ -308,24 +302,9 @@ def monitor_traffico(intervallo=1, json_filename="network_traffic.json", csv_fil
         
         time.sleep(intervallo)
 
-#-----------------------------------------------------------------------------------------------------------------------#
-# psol
-
 def psol():
     clear_screen_terminal()
-    print(rf'''
-                     {B}. 
-                    {B}/ \{W}
-  ____  ____        {B}| |{W}
- |  _ \/ ___|  ___  {B}| |{W}  
- | |_) \___ \ / {R}_{W} \ {B}|.|{W}   
- |  __/ ___) | {R}(0){W} |{B}|.|{W}  
- |_|   |____/ \_{R}^{W}_/ {B}|:|{W}  
-                    {B}|:|{W}  
-                 {W}~{Y}\==8==/{W}~{W}
-                     {R}8{W}
-                     {R}0{W} 
-''')
+    psol_Banner.PSOL__WIN()
 
     def check_tunnel_status(port):
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -371,9 +350,6 @@ def psol():
 
     if __name__ == "__main__":
         net_port()
-
-#-----------------------------------------------------------------------------------------------------------------------#
-# informations wifi
 
 def get_wifi_info():
     wifi_info = {}
@@ -474,27 +450,9 @@ def get_wifi_info():
     except subprocess.CalledProcessError:
         return {"Error": "Failed to retrieve WiFi information"}
 
-#-----------------------------------------------------------------------------------------------------------------------#        
-# show password network
-
 def show_password_network():
     clear_screen_terminal()
-    print(fr'''{R}
-    ."""-.
-   /      \
-   |  _..--'-.
-  >.`{W}__.-""\;"`
-  / /(     ^\
-  '-`)     =|{D}-.
-   {W}/{Y}`--.'--'   {D}\ .-.
- {Y}.'`-._ `.\    {D}| J / 
-{Y}/      `--.|   {D}\__/ {W}
- __ _                       ___
-/ _\ |__   _____      __   / _ \__ _ ___ ___
-\ \| '_ \ / {R}_{W} \ \ /\ / /  / /_)/ _` / __/ __|
-_\ \ | | | {R}(0){W} \ V  V /  / ___/ (_| \__ \__ \
-\__/_| |_|\_{R}^{W}_/ \_/\_/   \/    \__,_|___/___/
-    ''')
+    ShowPass_Banner.ShowPass__WIN()
     table = PrettyTable()
     table.field_names = [f"{B}ID{W}", f"{M}Name{W}", f"{Y}Password{W}"]
     networks = os.popen('netsh wlan show profile').read()
@@ -513,24 +471,13 @@ _\ \ | | | {R}(0){W} \ V  V /  / ___/ (_| \__ \__ \
     
     print(table)
 
-#-----------------------------------------------------------------------------------------------------------------------#
-# WSL
-
 def wsl():
     try:
         clear_screen_terminal()
         if os.name != 'nt':
             print("This script is designed for Windows only.")
             return
-        print(fr"""
-            {W}•{B}_{W}•      
-            {Back.YELLOW}oo{S}{B}|          
-           / '\'        
-          {Back.YELLOW}({S}{B}\_;/{Back.YELLOW}){S}{B}            
-     _ _ _ _____ __    
-    | | | |   __|  |   
-    | | | |__   |  |__ 
-    |_____|_____|_____|{W}""")
+        WSL_Banner.WSL__WIN()
         print(f'\n{Back.RED} Windows Subsystem for Linux {S}{W}\n')
         print(f"{G}[1] {B}Activate (WSL){W}")
         subprocess.run("wsl --install", shell=True, check=True)
@@ -565,9 +512,6 @@ def wsl():
     except Exception as e:
         print(f"{please} An unexpected error occurred: {e}{W}")
 
-#-----------------------------------------------------------------------------------------------------------------------#
-# uninstall wsl
-
 def uninstall_wsl():
     remove_wsl = input(f"{Enter} Do you want to uninstall WSL? {Y}(y/n){B}: {Y}").strip().lower()
     
@@ -599,9 +543,6 @@ def uninstall_wsl():
 
     else:
         print(f"{ERROR} input Please enter 'y' or 'n'!{W}")
-
-#-----------------------------------------------------------------------------------------------------------------------#
-# control folder show and hide for folder
 
 def folder():
 
@@ -647,9 +588,6 @@ def folder():
     if __name__ == "__main__":
         Show_Hide()
 
-#-----------------------------------------------------------------------------------------------------------------------#
-# generate for password
-
 def passwords():
     def generate_password(Length):
         uppercase_chars = string.ascii_uppercase
@@ -675,9 +613,6 @@ def passwords():
         print(f"{sign} Generated password:{M} {password}")
     except ValueError:
         print(f"{please} Please enter a valid number!{W}")
-
-#-----------------------------------------------------------------------------------------------------------------------#
-# Encrypt and Decrypt images audio and binary
 
 def Encrypt_decrypt_images_audio_binary():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -816,22 +751,10 @@ def Encrypt_decrypt_images_audio_binary():
     if __name__ == "__main__":
         main()
 
-#-----------------------------------------------------------------------------------------------------------------------#
-# istp
-
 def istp():
 
     def Banner_istp():
-        print(f"""
-      {G}\ | /{W}                                                     
-     {B}-- {R}O{B} --{W}                                                    
-       {G}/|\       {B} ___  ____________________________{W}             
-      {G}/\|/\      {B}|   |/   _____/__    ___/______   \{W}            
-     {G}/  |  \     {B}|   |\_____  \  |    |   |     ___/{W}            
-    {G}/\/\|/\/\    {B}|   |/        \ |    |   |    |{W}                
-   {G}/    |    \   {B}|___|_______  / |____|   |____| {Y}Version : Professional{W}
-  -     -     -        {B}      \/{W}                  {Y}By {W}: Mohammed Al-Baqer{M}{W}          
- {Back.RED}{W} [Internet Speed Test Ping] {S}{W}""")
+        istp_Banner.ISTP__WIN()
 
     def clear_screen():
         operating_system = os.name
@@ -883,7 +806,7 @@ def istp():
 
     clear_screen()
     Banner_istp()
-    print("\033[0m") # Reset color
+    print("\033[0m")
     print(f"{INFO} system is {W}: {B}Windows{W}")
     wifi_info = get_wifi_info()
     for key, value in wifi_info.items():
@@ -962,34 +885,8 @@ def istp():
 
     main_task()
 
-#-----------------------------------------------------------------------------------------------------------------------#
-# server speed test
-
 def server_st():
-
-    def Banner():
-        operating_system = os.name
-        try:
-            if (operating_system == 'posix'):
-                os.system('clear')
-            elif (operating_system == 'nt'):
-                os.system('cls')
-            else:
-                print(f"{please} System unknown!{S}")
-        except Exception as e:
-            print(f"{ERROR}{W}: {e}")
-
-        print(rf"""{Y}
- __            ___              
-|__| ____   __| _/ ____ ___  ___
-|  |/    \ / __ |_/ __ \\  \/  /
-|  |   |  \ /_/ |\  ___/_\    / 
-|__|___|  /____ | \___  /__/\_ \
-        \/     \/     \/      \/
-    """)
-    #datatime
-    Banner()
-
+    Index_Banner.INDEX__WIN()
     Localhost = '127.0.0.1'
     Port = 8000
 
@@ -1027,19 +924,11 @@ def server_st():
 
     open_browser()
 
-#-----------------------------------------------------------------------------------------------------------------------#
-# Python Executable
-
 def Python_Executable():
     def py_exe():
         try:
             os.system('cls' if os.name == 'nt' else 'clear')
-            print(f"""{G}                                                         
- _____     _   _              _____                 _       _   _     
-|  _  |_ _| |_| |_ ___ ___   |   __|_ _ ___ ___ _ _| |_ ___| |_| |___ 
-|   __| | |  _|   | . |   |  |   __|_'_| -_|  _| | |  _| .'| . | | -_|
-|__|  |_  |_| |_|_|___|_|_|  |_____|_,_|___|___|___|_| |__,|___|_|___|
-      |___|                                                           {W}\n""")
+            Python_Executable_Banner.PythonExecutable__WIN()
             print(background(f"{W} Python Executable Convert code from (.py) to (.exe) ", "Yellow"))
             desktop_path = Path.home() / 'Desktop'
             while True:
@@ -1099,9 +988,6 @@ def Python_Executable():
             print(ERROR(str(e)))
     py_exe()
 
-#-----------------------------------------------------------------------------------------------------------------------#
-# Python Package Manager
-
 def python_package_manager():
     def clearScreen():
         try:
@@ -1154,19 +1040,10 @@ def python_package_manager():
             symbol = loading_symbols[i % len(loading_symbols)]
             print(f'\rLoading... {symbol}', end='', flush=True)
             time.sleep(0.09)
-
-    # Main logic
     try:
         while True:
             clearScreen()
-            print(f'''{M}                                                                                
- _____     _   _              _____         _               
-|  _  |_ _| |_| |_ ___ ___   |  _  |___ ___| |_ ___ ___ ___ 
-|   __| | |  _|   | . |   |  |   __| .'|  _| '_| .'| . | -_|
-|__|  |_  |_| |_|_|___|_|_|  |__|  |__,|___|_,_|__,|_  |___|
-      |___|                                        |___|  
-           {G}By {W}: {B}Mohammed Al-Baqer                  
-{W}''')
+            Python_Package_Banner.PythonPackage__WIN()
             Developer(f'{B}[{G}Python packages{B}]{W} were developed by {R}[{Y}Mohammed Al-Baqer{R}]{W}\n\n')
             text = ['show list of installed pip packages', 'install a pip package', 'uninstall a pip package', 'upgrade pip', 'Update a specific package', 'show informations for python and version', 'installpackage and version', 'About Developer', 'exit']
 
@@ -1231,9 +1108,6 @@ def python_package_manager():
 
     except Exception as e:
         print(f'{please} Error: ' + str(e))
-
-#-----------------------------------------------------------------------------------------------------------------------#
-# password GUI
 
 class PasswordGeneratorApp(QtWidgets.QWidget):
     def __init__(self):
@@ -1350,16 +1224,10 @@ class PasswordGeneratorApp(QtWidgets.QWidget):
 
 Developer: Mohammed AL-Baqer""")
 
-#-----------------------------------------------------------------------------------------------------------------------#
-# slow print
-
 def slowprint(text):
     for char in text:
         print(char, end='', flush=True)
         time.sleep(0.02)
-
-#-----------------------------------------------------------------------------------------------------------------------#
-# Banner
 
 def Banner():
     clear_screen_terminal()
@@ -1392,9 +1260,6 @@ def table():
     table.add_row([f'{G}15{W}', f'{Y}Update Manager Pc{W}'])
     print(table)
     DateTime()
-
-#-----------------------------------------------------------------------------------------------------------------------#
-# main
 
 def main():
     try:
@@ -1444,15 +1309,7 @@ def main():
 
             elif choice == '4':
                 clear_screen_terminal()
-                print(f'''{Y}
-                     ___                    
-                    __H__{Y}  _    _ _      
- ___ ___ ___ _ _ ___ [{Back.RED}.{S}{Y}] {Y}_| |_ | | |
-|_ -| -_|  _| | |  _|[{Back.RED}.{S}{Y}]{Y}|_   _||_  |
-|___|___|___|___|_|  [{Back.RED}.{S}{Y}]  {Y}|_|  |___|
-                      V  
-{G}By {W}: {B}Mohammed Al-Baqer    
-{W}''')
+                secrity_Banner.SECURITY__WIN()
                 print(f'{G}[1] {Y}chack update windows system{W}')
                 print(f'{G}[2] {Y}Window system cleaning and scanning{G}')
                 print(f'{G}[3] {Y}generate for password{G}')
@@ -1485,13 +1342,17 @@ def main():
                     os.system("sfc /scannow")
                     print(f'{sign} Hard disk is being checked.{G}')
                     os.system("chkdsk /f /r")
+
                     reboot = input(f'{Question} Do you Restart System? {Y}(y/n):{R} ')
+
                     if reboot == 'y' or reboot == 'Y':
                         os.system('shutdown /r /t 0')
                         break
+
                     elif reboot == 'n' or reboot == 'N':
                         Back_Menu()
                         break
+
                     else:
                         continue
 
@@ -1539,15 +1400,9 @@ def main():
                 
                 elif choice_security == '10':
                     clear_screen_terminal()
-                    print(f'''{B}
-   ___   _____  ___  __    
-  / __\  \_   \/___\/ _\   
- /__\//   / /\//  //\ \    
-/ \/  \/\/ /_/ \_// _\ \   
-\_____/\____/\___/  \__/   
-{G}By {W}: {B}Mohammed Al-Baqer                          
-{W}''')
+                    BIOS_Banner.BIOS__WIN()
                     bios = input(f'{Enter} Do you go to BIOS? {Y}(y,n): {M}')
+
                     if bios == 'y' or bios == 'Y':
                         BIOS.BIOS_Loading()
                         print(f'{R}~> {B}Shut Down system')
@@ -1586,16 +1441,7 @@ def main():
             elif choice == '5':
                 table = PrettyTable()
                 clear_screen_terminal()
-                print(f"""
-      {G}\ | /{W}                                                     
-     {B}-- {R}O{B} --{W}                                                    
-       {G}/|\          
-      {G}/\|/\             
-     {G}/  |  \                 
-    {G}/\/\|/\/\                  
-   {G}/    |    \   
-  -     -     -
- {G}By {W}: {B}Mohammed Al-Baqer{W}""")
+                network_Banner.network()
                 table.field_names = [f'{B}ID{W}', f'{M}Tools{W}']
                 table.add_row([f'{G}1{W}', f'{Y}Show informations Network{W}'])
                 table.add_row([f'{G}2{W}', f'{Y}Network Traffic Monitoring{W}'])
@@ -1672,17 +1518,7 @@ def main():
 
             elif choice == '6':
                 clear_screen_terminal()
-                print(fr"""
-            {W}•{B}_{W}•      
-            {Back.YELLOW}oo{S}{B}|          
-           / '\'        
-          {Back.YELLOW}({S}{B}\_;/{Back.YELLOW}){S}{B}            
-     _ _ _ _____ __    
-    | | | |   __|  |   
-    | | | |__   |  |__ 
-    |_____|_____|_____|{W}
-    {G}By {W}: {B}Mohammed Al-Baqer    
-""")
+                WSL_Banner.WSL__WIN()
                 print(f'{G}[1] {Y}Install wsl{W}')
                 print(f'{G}[2] {Y}uninstall wsl{W}')
                 print(f'{G}[3] {Y}Exit{W}')
@@ -1704,13 +1540,7 @@ def main():
             elif choice == '7':
                 try:
                     clear_screen_terminal()
-                    print(f'''{G}
-   ___   _  __    __        
-  / __| (_) \ \   \ \       
- | (__   _   \ \   > >      
-  \___| (_)   \_\ /_/   ___ 
-                       |___|
-''')
+                    command_Banner.COMMAND__WIN()
                     print('\n ' + G + '{' + B + '<' + Y + '/' + B + '>' + M + '_' + G + '}' + f'\n{B} CODE\n{G} IS ASCLL ART\n' + W)
                     print(f'{G}[1] {B}Installing {Y}MicroSoft C++ {B}System Components{W}')
                     print(f'{G}[2] {B}Installing {M}C {B}IDE for Windows{W}')
@@ -1934,18 +1764,10 @@ def main():
                 except KeyboardInterrupt:
                     pass
 
-
             elif choice == '8':
                 table = PrettyTable()
                 clear_screen_terminal()
-                print(rf'''{B}
-                __   /\                   
-______ ____ ___/  |_|  |__   ____   ____  
-\____ \\   |  |   __\  |  \ / __ \ /    \ 
-|  |_\ \\___  ||  | |      \  \_\ )   |  \
-|   ___// ____||__| |___|  /\____/|___|  /
-|__|    \/               \/            \/                                                                                                                                                                                    
-                {G}By {W}: {B}Mohammed Al-Baqer {W}{W}''')
+                Python_Banner.Python__WIN()
                 table.field_names = [f'{B}ID{W}', f'{M}Tools{W}', f'{Y}Whit Wowking?{W}']
                 table.add_row([f'{G}1{W}', f'{Y}Python Package{W}', f'{C}Task Manager for Python and pip Package{W}'])
                 table.add_row([f'{G}2{W}', f'{Y}Python Executable{W}', f'{C}transformation file from (.py) to (.exe){W}'])
@@ -1995,11 +1817,9 @@ ______ ____ ___/  |_|  |__   ____   ____
                 table = Table(title="Tools AI")
                 table.add_column("ID", justify="right", style="cyan", no_wrap=True)
                 table.add_column("Tools", style="magenta")
-
                 table.add_row("1", "Game play XO")
                 table.add_row("2", "Exit")
                 console.print(table)
-                
                 Tools = input(f'{Enter} Enter choice number from Tolls AI: {Y}')
 
                 if Tools == '1':
@@ -2060,31 +1880,7 @@ ______ ____ ___/  |_|  |__   ____   ____
             
             elif choice == '11':
                 clear_screen_terminal()
-                print(f"""
-       {R}_,.                   
-     {R},` -.)                  
-    {R}( _{W}{Y}/-\{Y}-._               
-   {R}/,{Y}|`--._,-^|           {Y}/|{W} 
-   {R}\_{Y}| {G}|`-._/|{Y}|          {Y}/ |{W} 
-     {Y}|  {G}`-, /{Y} |         {Y}/  /{W} 
-     {Y}|     {G}||{Y} |        {Y}/  /{W}  
-      {Y}`r-._{G}||{Y}/   {B}__   {Y}/  /{W}   
-  {B}__,-<_     )`-/  `.{Y}/  /{W}    
- {B}/\   `---    \   / {Y}/  /{W}     
- {B}|   |           |.{Y}/  /{W}      
- {B}|    /          /{Y}/  /{W}       
- {B}\_/  \         |{Y}/  /{W}        
-  {B}|    |   _,^- {Y}/  /{W}         
-  {B}|    , ``  {Y}(\{Y}/  /_{W}          {B}.{W}
-   {B}\,.->._    {Y}\X-=/^{W}         {B}/ \{W}       _            
-   {B}(  /   `-._{Y}//^`{W}  ___  ___ {B}| |{W} _ __ | |_          
-    {B}`Y-.____{Y}(__){W}   / {R}_{W} \/ __|{B}|.|{W}| '_ \| __|           
-     {B}|     {Y}(__){B}|{W}  | {R}(0){W} \__ \{B}|.|{W}| | | | |_            
-     {B}|_________|   {W}\_{R}^{W}_/|___/{B}|:|{W}|_| |_|\__|   {G}By {W}: {Y}Mohammed Al-Baqer{W}
-                             {B}|:|{W}
-                          {W}~{Y}\==8==/{W}~{R}
-                              8
-                              0{W} """)
+                OSINT_Banner.OSINT__WIN()
                 print(f'{G}[1] {B}informations instagram osint{W}')
                 print(f'{G}[2] {B}find About phone using instagram or Dont using{W}')
                 print(f'{G}[99] {B}Exit{W}')
