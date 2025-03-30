@@ -50,7 +50,6 @@ from qrcode.image.pil import PilImage
 from rich.table import Table
 from rich.console import Console
 from tqdm import tqdm
-from rembg import remove
 from PIL import Image
 from pathlib import Path
 import numpy as np
