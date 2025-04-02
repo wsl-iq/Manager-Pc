@@ -1,5 +1,37 @@
 #!/usr/bin/env python
 
+# Custom License Based on MIT License
+# Manager Pc : personal computer assistant
+# Version    : 3.2.1
+# Github     : https://github.com/wsl-iq/Manager-Pc
+
+'''
+
+                                       Copyright (c) 2024-2025
+                                       Version 3.2.1, 17 November 2024
+                                        Developer: Mohammed Al-Baqer
+
+                                        [Preamble]
+                                        
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to use,
+modify, and distribute modified versions of the Software **for personal or educational purposes only**, 
+provided that the following conditions are met:
+
+1. The Software may not be sold, resold, or used for commercial purposes.
+2. The Software must retain this copyright notice in all copies.
+3. The Software must not be falsely claimed as someone else's work.
+4. Any modifications must acknowledge the original developer.
+5. Unauthorized distribution of the original or modified versions for commercial gain is strictly prohibited.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHOR OR COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+'''
+
 import os
 import socket
 import requests
