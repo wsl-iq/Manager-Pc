@@ -4,32 +4,30 @@
 # Manager Pc : personal computer assistant
 # Version    : 3.2.1
 # Github     : https://github.com/wsl-iq/Manager-Pc
+# Developer: Mohammed Al-Baqer
 
 '''
 
-                                       Copyright (c) 2024-2025
-                                       Version 3.2.1, 17 November 2024
-                                        Developer: Mohammed Al-Baqer
+                              Copyright (c) 2024-2025
+                              Version 3.2.1, 17 November 2024
+                               Developer: Mohammed Al-Baqer
 
-                                        [Preamble]
-                                        
+[ Preamble ]
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to use,
 modify, and distribute modified versions of the Software **for personal or educational purposes only**, 
 provided that the following conditions are met:
 
-1. The Software may not be sold, resold, or used for commercial purposes.
-2. The Software must retain this copyright notice in all copies.
-3. The Software must not be falsely claimed as someone else's work.
-4. Any modifications must acknowledge the original developer.
-5. Unauthorized distribution of the original or modified versions for commercial gain is strictly prohibited.
+1. The Software **may not be used, sold, or resold for commercial purposes** in any form, whether directly or indirectly.
+2. This copyright notice must be retained in all copies and significant modifications.
+3. Any modified version must acknowledge the original developer.
+4. Unauthorized distribution of the original or modified versions **for financial gain** is strictly prohibited.
+5. This license does not grant permission to use the Software for any illegal activities.
+6. The developer is not responsible for providing ongoing support, updates, or maintenance.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHOR OR COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY,
-WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR OR COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 '''
 
 import os
