@@ -1,0 +1,6 @@
+*.py linguist-detectable=true
+*.html linguist-detectable=true
+*.css linguist-detectable=true
+*.js linguist-detectable=true
+*.ps1 linguist-language=PowerShell
+*.bat linguist-language=Batchfile
