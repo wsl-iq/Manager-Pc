@@ -1,5 +1,5 @@
 :: Custom License Based on MIT License
-:: Update     : Update Programming Manager Pc
+:: Update     : chacking setup python Programming Manager Pc
 :: Version    : 3.2.1
 :: Github     : https://github.com/wsl-iq/Manager-Pc
 :: Developer  : Mohammed Al-Baqer
@@ -126,10 +126,6 @@
 
 :: THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND EXPRESS OR IMPLIED INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 :: IN NO EVENT SHALL THE AUTHOR OR COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM DAMAGES OR OTHER LIABILITY WHETHER IN AN ACTION OF CONTRACT TORT OR OTHERWISE ARISING FROM OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-:: ================================================================
-::                  END OF PRIVACY POLICY
-:: ================================================================
 
 
 @echo off
