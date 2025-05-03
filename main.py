@@ -130,6 +130,7 @@ from Application.ExecuTable.MicroSoft_Visual_Studio import(
     Enterprise,
     Professional
 )
+
 from Application.ExecuTable.VS_Code import vsCode
 from Application import PyCharm
 from Banner import network_Banner
@@ -417,15 +418,15 @@ def get_wifi_info():
                 
                 if protocol_match:
                     wifi_info[f'{sign} Protocol{W}'] = protocol_match.group(1).strip()
-                if security_type_match:
+                elif security_type_match:
                     wifi_info[f'{sign} Security type{W}'] = security_type_match.group(1).strip()
-                if network_band_match:
+                elif network_band_match:
                     wifi_info[f'{sign} Network band{W}'] = network_band_match.group(1).strip()
-                if network_channel_match:
+                elif network_channel_match:
                     wifi_info[f'{sign} Network channel{W}'] = network_channel_match.group(1).strip()
-                if link_speed_match and transmit_speed_match:
+                elif link_speed_match and transmit_speed_match:
                     wifi_info[f'{sign} Link speed (Receive/Transmit){W}'] = f"{link_speed_match.group(1).strip()}/{transmit_speed_match.group(1).strip()} (Mbps)"
-                if ipv4_dns_servers_match:
+                elif ipv4_dns_servers_match:
                     wifi_info[f'{sign} IPv4 DNS servers{W}'] = ipv4_dns_servers_match.group(1).strip()
                 
                 return wifi_info
@@ -452,29 +453,29 @@ def get_wifi_info():
 
         if ssid_match:
             wifi_info[f'{sign} SSID{W}'] = ssid_match.group(1).strip()
-        if protocol_match:
+        elif protocol_match:
             wifi_info[f'{sign} Protocol{W}'] = protocol_match.group(1).strip()
-        if security_type_match:
+        elif security_type_match:
             wifi_info[f'{sign} Security type{W}'] = security_type_match.group(1).strip()
-        if network_band_match:
+        elif network_band_match:
             wifi_info[f'{sign} Network band{W}'] = network_band_match.group(1).strip()
-        if network_channel_match:
+        elif network_channel_match:
             wifi_info[f'{sign} Network channel{W}'] = network_channel_match.group(1).strip()
-        if link_speed_match and transmit_speed_match:
+        elif link_speed_match and transmit_speed_match:
             wifi_info[f'{sign} Link speed (Receive/Transmit){W}'] = f"{link_speed_match.group(1).strip()}/{transmit_speed_match.group(1).strip()} (Mbps)"
-        if link_local_ipv6_match:
+        elif link_local_ipv6_match:
             wifi_info[f'{sign} Link-local IPv6 address{W}'] = link_local_ipv6_match.group(1).strip()
-        if ipv4_match:
+        elif ipv4_match:
             wifi_info[f'{sign} IPv4 address{W}'] = ipv4_match.group(1).strip()
-        if ipv4_dns_servers_match:
+        elif ipv4_dns_servers_match:
             wifi_info[f'{sign} IPv4 DNS servers{W}'] = ipv4_dns_servers_match.group(1).strip()
-        if manufacturer_match:
+        elif manufacturer_match:
             wifi_info[f'{sign} Manufacturer{W}'] = manufacturer_match.group(1).strip()
-        if description_match:
+        elif description_match:
             wifi_info[f'{sign} Description{W}'] = description_match.group(1).strip()
-        if driver_version_match:
+        elif driver_version_match:
             wifi_info[f'{sign} Driver version{W}'] = driver_version_match.group(1).strip()
-        if mac_address_match:
+        elif mac_address_match:
             wifi_info[f'{sign} Physical address (MAC){W}'] = mac_address_match.group(1).strip()
         
         return wifi_info
@@ -1849,7 +1850,8 @@ def main():
                 table.add_column("ID", justify="right", style="cyan", no_wrap=True)
                 table.add_column("Tools", style="magenta")
                 table.add_row("1", "Game play XO")
-                table.add_row("2", "Exit")
+                table.add_row("2", "Survival Zombie")
+                table.add_row("3", "Exit")
                 console.print(table)
                 Tools = input(f'{Enter} Enter choice number from Tolls AI: {Y}')
 
@@ -1860,6 +1862,12 @@ def main():
                     break
 
                 elif Tools == '2':
+                    clear_screen_terminal()
+                    os.system(r'zombie\index.html')
+                    Back_Menu()
+                    break
+
+                elif Tools == '3':
                     Back_Menu()
                     break
 
