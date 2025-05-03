@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Zombie Game </title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .control-wrapper {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: sans-serif;
+      z-index: 1000;
+      opacity: 0.9;
+    }
+    .wasd {
+      display: grid;
+      grid-template-columns: repeat(3, 45px);
+      grid-template-rows: repeat(2, 45px);
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+    }
+    .key {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: bold;
+      border: 2px solid;
+      border-radius: 10px;
+      background-color: rgba(0,0,1,2.10);
+      transition: all 0.2s ease;
+    }
+    .key.w { color: #00f; border-color: #00f; box-shadow: 0 0 6px #00f; grid-column: 2; grid-row: 1; }
+    .key.a { color: #ff0; border-color: #ff0; box-shadow: 0 0 6px #ff0; grid-column: 1; grid-row: 2; }
+    .key.s { color: #f00; border-color: #f00; box-shadow: 0 0 6px #f00; grid-column: 2; grid-row: 2; }
+    .key.d { color: #0f0; border-color: #0f0; box-shadow: 0 0 6px #0f0; grid-column: 3; grid-row: 2; }
+
+    .key:active {
+      box-shadow: 0 0 15px #fff;
+      transform: scale(1.05);
+      background-color: rgba(255,255,255,0.1);
+    }
+
+    .mouse {
+      margin-top: 12px;
+    }
+    .mouse img {
+      width: 60px;
+      height: auto;
+      filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.8));
+    }
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="mini-map"></div>
+  <div class="main-screen">
+    <div class="start-button">LOADING...</div>
+  </div>
+  <div class="control-wrapper">
+    <div class="wasd">
+      <div class="key w">W</div>
+      <div class="key a">A</div>
+      <div class="key s">S</div>
+      <div class="key d">D</div>
+    </div>
+    <div class="mouse">
+      <img src="mouse.png" alt="Mouse Illustration">
+    </div>
+  </div>
+</div>
+<!-- partial -->
+<script src='https://cdn.jsdelivr.net/gh/asjs-dev/asjs-3.0@242674b2f4a86c50801ca991f63f5b44d88dbe9f/src/common/js/webGl/asjs.webgl.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
