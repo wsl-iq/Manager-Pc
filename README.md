@@ -1,12 +1,3 @@
-<pre style="background-color:#1e1e1e; color:white; padding:1rem; border-radius:10px; font-family:monospace; font-size:16px; overflow-x:auto;">
-<span style="color:red;">●</span> <span style="color:gold;">●</span> <span style="color:limegreen;">●</span>
-<span style="color:limegreen;">C:\&gt;</span> <span style="color:red;">{</span>
-<span style="color:gold;">$</span> <span style="color:dodgerblue;">WSL-IQ</span>
-<span style="color:red;">};</span>
-</pre>
-
----
-
 <img src="icon\icon.png" alt="Program Icon" width="100" height="100">
 
 
